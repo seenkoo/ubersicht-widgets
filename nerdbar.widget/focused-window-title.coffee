@@ -1,5 +1,4 @@
-kwmc = "/usr/local/bin/kwmc"
-command: "#{kwmc} query window focused name"
+command: "osascript -e 'tell application \"System Events\" to get name of first application process whose frontmost is true'"
 refreshFrequency: 350
 
 render: (output) ->
