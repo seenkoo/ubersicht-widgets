@@ -1,7 +1,8 @@
 refreshFrequency: false
 
-render: (_output) ->
-  ""
+render: -> """
+  <div id="nerdbar"></div>
+"""
 
 style: """
   height: 26px
@@ -9,4 +10,5 @@ style: """
   background-color: #222324
   border-radius: 0 0 5px 5px
   z-index: -1
+  -webkit-font-smoothing: antialiased
 """

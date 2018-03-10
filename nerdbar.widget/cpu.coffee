@@ -1,7 +1,7 @@
 command: "ps -A -o %cpu |
 awk -v NUMBER_OF_CORES=$(/usr/local/bin/gnproc) \
 '{s+=\$1} END {printf(\"%.2f\", s/NUMBER_OF_CORES)}'"
-refreshFrequency: 2000
+refreshFrequency: 5000
 
 render: (output) ->
   """

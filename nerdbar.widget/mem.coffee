@@ -1,5 +1,5 @@
 command: "ps -A -o %mem | awk '{s+=\$1} END {print s}'"
-refreshFrequency: 2000
+refreshFrequency: 5000
 
 render: (output) ->
   """

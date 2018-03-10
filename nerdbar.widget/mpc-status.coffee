@@ -1,5 +1,5 @@
 command: "/usr/local/bin/mpc -h 87.224.193.7 status"
-refreshFrequency: 5000
+refreshFrequency: 15000
 
 render: (_output) ->
   """
